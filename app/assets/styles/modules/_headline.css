@@ -1,0 +1,50 @@
+.headline{
+    font-weight: 300;
+    color: $mainBlue;
+    font-size: 1.9rem;
+
+    @mixin közepes{
+        font-size: 2.875rem;
+    }
+
+    &--center{
+        text-align: center;
+    }
+
+    &--orange{
+        color: $Orange;
+    }
+
+    &--small{
+        font-size: 1.2rem;
+
+        @mixin közepes{
+            font-size: 1.875rem;
+        }
+    }
+
+    &--narrow{
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &--light{
+        font-weight: 100;
+    }
+
+    &--b-margin-small{
+        margin-bottom: .5em;
+    }
+
+    &--b-margin-large{
+        margin-bottom: 1.6em;
+    }
+
+    &--no-t-margin{
+        
+        @mixin kicsi{
+            margin-top: 0;
+        }
+    }
+}

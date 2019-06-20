@@ -1,0 +1,30 @@
+.row{
+
+    @mixin clearfix;
+
+    @mixin közepes{
+
+        &--gutters > div {
+            padding-right: 65px;
+            /*  ez a fő body-ra van vonatkoztatva: box-sizing: border-box; */
+        }
+    
+        &__közepes-4{
+            float: left;
+            width: 33.33%;
+        }
+
+        &__közepes-4-nagyobb {
+            width: 37%;
+        }
+
+        &__közepes-8{
+            float: left;
+            width: 66.66%;
+        }
+
+        &__közepes-8-kisebb{
+            width: 63%;
+        }
+    }
+}

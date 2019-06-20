@@ -1,15 +1,14 @@
-$mainBlue: #2f5572;
+/* A CSS fentől lefeléhaladva olvas, ezért:... */
 
-body{
-    color: $mainBlue;
-    padding: 25px;
-    margin: 10px;
-    columns: 300px 2;
-}
+@import "normalize.css"; /* ...ez kell elgyen a legelső */
+@import "base/_variables"; /* ...ez pedig közvetlen kell kövesse, hisz ami felette van, arra nem érvényesek a variációk */
+@import "base/_global";
+@import "base/_mixins";
 
-.box{
-    a{
-        display: block;
-        padding: 10px;
-    }
-}
+@import "modules/_large-hero";
+@import "modules/_btn";
+@import "modules/_wrapper";
+@import "modules/_page-section";
+@import "modules/_headline";
+@import "modules/_row";
+@import "modules/_generic_content_container";
