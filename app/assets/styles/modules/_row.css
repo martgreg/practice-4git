@@ -8,6 +8,14 @@
             padding-right: 65px;
             /*  ez a fő body-ra van vonatkoztatva: box-sizing: border-box; */
         }
+
+        &--gutters-large {
+            padding-right: -100px;
+        }
+
+        &--gutters-large > div{
+            padding-right: 100px;
+        }
     
         &__közepes-4{
             float: left;
@@ -16,6 +24,11 @@
 
         &__közepes-4-nagyobb {
             width: 37%;
+        }
+
+        &__közepes-6{
+            float: left;
+            width: 50%;
         }
 
         &__közepes-8{
