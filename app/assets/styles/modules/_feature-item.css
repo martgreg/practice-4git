@@ -1,0 +1,29 @@
+.feature-item{
+    position: relative;
+    padding-bottom: 2.5rem;
+
+    @mixin kicsi {
+        padding-left: 94px;
+    }
+
+    &__icon{
+        display: block;
+        margin: 0 auto;
+
+        @mixin kicsi{
+            position: absolute;
+            left: 0;
+        }
+    }
+
+    &__title{
+        font-size: 1.855rem;
+        font-weight: 300;
+        margin-bottom: .8rem;
+        text-align: center;
+
+        @mixin kicsi{
+            text-align: left;
+        }
+    }
+}
